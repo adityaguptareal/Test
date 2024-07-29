@@ -25,20 +25,20 @@ main {
     width: 99vw;
     height: 99vh;
 }
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border: 2px solid white;
-    padding: 60px;
+    padding: 10px 40px;
     border-radius: 20px;
 }
-.input{
+.input {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
     margin: 20px 0px;
 }
 .logo{
@@ -117,6 +117,9 @@ button{
 button{
     cursor: pointer;
 }
+button:hover{
+    background-color: #ffdb59;
+}
 .details {
     text-align: center;
     display: flex;
@@ -129,4 +132,41 @@ button{
 text-transform: lowercase;
 font-size: small;
 color: #3c3c3c;
+}
+.alertBox img{
+    width: 50px;
+}
+.alertBox{
+    padding: 20px;
+    background-color: white;
+    border-radius:20px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 10px;
+position:absolute;
+
+text-align: center;
+
+
+}
+.blackbox{
+   inset: 0;
+   position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.872);
+}
+button#reload {
+    position: relative;
+    top: 21%;
+}
+.input-text{
+    color: white;
+}
+button.submit{
+    margin: 15px 0px;
 }

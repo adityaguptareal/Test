@@ -1,4 +1,6 @@
 const weatherData = document.querySelector(".weatherData")
+const alertBox = document.querySelector(".alert")
+let container = document.querySelector(".container")
 const submit = document.getElementById("cta")
 const options = {
     method: 'GET',
@@ -44,13 +46,22 @@ async function getWeather(url, options) {
                         </div>
                     </div>
                 </div>`
- 
 
-        city.value=" "
+
+        city.value = " "
 
 
 
     } catch (error) {
+        alertBox.innerHTML = `<div class="blackbox">
+    <div class="alertBox">something <br>Went wrong ! <img src="cross.png" alt="" class="cross"></div>
+    <button id="reload">Reload</button>
+</div>`
+const reloadButton = document.getElementById("reload")
+reloadButton.addEventListener("click",()=>{
+   window.location.reload()
+})
+
         console.error(error);
     }
 }
@@ -59,5 +70,6 @@ submit.addEventListener("click", () => {
     const city = document.getElementById("city").value
     let url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${city}`;
     getWeather(url, options)
-    
+
 })
+
