@@ -1,0 +1,19 @@
+@media screen and (max-width:430px){
+    .logo {
+        width: 200px;
+    }
+    .cta-weather {
+        color: #ffc800;
+        font-size: 35px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .cardSection {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+    }
+}
