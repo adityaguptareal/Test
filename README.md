@@ -1,6 +1,8 @@
 
 # 🌤️ Weather Forecast App
 
+![ScreenShot](https://github.com/adityaguptareal/skynimbuscastr/blob/main/skynimbuscastr.png)
+
 [🚀 Live Demo](https://skynimbuscastr.web.app/)
 
 ## 📋 Overview
