@@ -57,10 +57,10 @@ main {
 button {
   border: none;
   background-color: #ffc800;
-  padding: 10px 17px;
+  padding: 12px 20px;
   border-radius: 20px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
 }
 .cta-weather {
   color: #ffc800;
@@ -85,12 +85,8 @@ button {
   border-radius: 10px;
   background-color: white;
 }
-/* .cardSection1{
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
 
-} */
+
 .cardSection {
   display: flex;
   justify-content: space-between;
